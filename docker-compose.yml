@@ -10,7 +10,5 @@ services:
       - NODE_ENV=production
     ports:
       - "8000:8000"
-    command:
-      - node src/main.js
     volumes:
       - /srv/chat:/srv/app/static

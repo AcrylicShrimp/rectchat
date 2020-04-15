@@ -10,3 +10,4 @@ COPY src/ ./src/
 COPY static/ ./static/
 
 EXPOSE 8000
+ENTRYPOINT node src/main.js
