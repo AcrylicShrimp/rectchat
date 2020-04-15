@@ -1,30 +1,25 @@
 {
-  "name": "rectchat",
-  "version": "1.0.0",
-  "description": "A WebGL-based 2D chatting web service.",
-  "main": "src/main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AcrylicShrimp/rectchat.git"
-  },
-  "keywords": [
-    "webgl",
-    "service",
-    "web",
-    "javascript",
-    "nodejs"
-  ],
-  "author": "AcrylicShrimp",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AcrylicShrimp/rectchat/issues"
-  },
-  "homepage": "https://github.com/AcrylicShrimp/rectchat#readme",
-  "dependencies": {
-    "compression": "^1.7.3",
-    "express": "^4.16.4",
-    "helmet": "^3.15.0",
-    "socket.io": "^2.2.0",
-    "winston": "^3.1.0"
-  }
+	"name": "rectchat",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AcrylicShrimp/rectchat.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AcrylicShrimp/rectchat/issues"
+	},
+	"homepage": "https://github.com/AcrylicShrimp/rectchat#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"helmet": "^3.22.0",
+		"socket.io": "^2.3.0"
+	}
 }

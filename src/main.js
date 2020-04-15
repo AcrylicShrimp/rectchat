@@ -1,13 +1,10 @@
-
 'use strict';
 
-const httpPort      = process.env.HTTPPORT || 80;
-const websocketPort = process.env.WEBSOCKETPORT || 13500;
+const http = require('http');
 
-require('./server-websocket').listen(websocketPort, () => {
-	console.log(`The websocket server is running on port ${websocketPort}.`);
+const app = require('./application');
+const io = require('./io');
 
-	require('./server-http').listen(httpPort, () => {
-		console.log(`The HTTP server is running on port ${httpPort}.`);
-	});
-});
+const server = io.attach(http.createServer(app));
+
+server.listen(8000, () => console.log('HTTP server is running on port 8000.'));
