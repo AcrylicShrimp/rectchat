@@ -1,7 +1,7 @@
 
 FROM node:dubnium-alpine
 
-WORKDIR /srv/app
+WORKDIR /srv/app/chat
 
 COPY package*.json ./
 RUN npm ci --only=production

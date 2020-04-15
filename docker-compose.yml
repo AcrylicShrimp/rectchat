@@ -13,4 +13,4 @@ services:
     command:
       - node ./src/main.js
     volumes:
-      - /srv/chat:/srv/app/static
+      - /srv/chat:/srv/app/chat/static
